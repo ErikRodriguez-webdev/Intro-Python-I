@@ -35,4 +35,5 @@ print(len(x))
 # for i in range(len(x)):
 #     x.append(x[i] * 1000)
 #     x.pop(i)
+print([num * 1000 for num in x])
 print(x)
