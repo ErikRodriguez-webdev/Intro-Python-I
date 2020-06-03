@@ -48,10 +48,8 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-# waypoints[3]["name"] = "a place"
-# waypoints[3]["not a real place"] = waypoints.pop(3)
-# waypoints[3]["not a real place"] = -130
-# print(test)
+waypoints[0]["name"] = "not a real place"
+waypoints[0]["lon"] = -130
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
