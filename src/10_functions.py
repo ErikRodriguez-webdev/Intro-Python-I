@@ -2,7 +2,7 @@
 
 # YOUR CODE HERE
 def is_even(number):
-    if num % 2 == 0:
+    if number % 2 == 0:
         return print(f"{number} is Even!")
     else:
         return print(f"{number} is Odd!")

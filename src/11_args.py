@@ -21,14 +21,8 @@ print(f1(1, 2))
 def f2(*num):
     sum = 0
 
-    print(type(num))
-
-    if type(num) == tuple:
-        for i in num:
-            sum = sum + i
-    elif type(num) == list:
-        for i in range(len(num)):
-            sum = sum + num[i]
+    for number in num:
+        sum += number
 
     return sum
 
@@ -69,8 +63,8 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 def f4(**kwargs):
-    for key in kwargs.keys():
-        print(f"key: {key}, value: {kwargs[key]}")
+    for key, value in kwargs.items():
+        print(f"Key: {key}, value: {value}")
 
 
 # Should print
