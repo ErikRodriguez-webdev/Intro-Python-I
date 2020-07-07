@@ -31,14 +31,19 @@ import sys
 import calendar
 from datetime import datetime
 
+# grab terminal data
 terminal_data = sys.argv
 print(terminal_data)
 
-testing = datetime.now()
+# current date
+current_date = datetime.now()
 
+# if length is 3, then grab month and year from list
 if len(terminal_data) == 3:
     print(calendar.month(int(terminal_data[2]), int(terminal_data[1])))
+# if length is 2, then grab month from list and use current year
 elif len(terminal_data) == 2:
-    print(calendar.month(testing.year, int(terminal_data[1])))
+    print(calendar.month(current_date.year, int(terminal_data[1])))
+# else, then use current month and year from module
 else:
-    print(calendar.month(testing.year, testing.month))
+    print(calendar.month(current_date.year, current_date.month))
